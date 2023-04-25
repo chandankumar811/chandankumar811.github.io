@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <marquee><h1>My Project</h1></marquee>
+    </header>
+    <section>
+        <div class="calci">
+            <fieldset id="fieldset-calci">
+                    <legend id="legend-calci">Calculator</legend>
+                     <img src="calculator.png" class="photo">
+                <fieldset id="fieldset-calci_html_and_java">
+                     <legend id="legend-calci_html_and_java">HTML and JavaScript</legend>
+                    <p>It has an HTML structure that includes a <b>head</b> and a <b>body</b> section. The <b>head</b> section contains metadata about the page, such as its title and links to external stylesheets. The <b>body</b> section contains the main content of the page.<br><br>In this case, the main content is a calculator interface. The calculator is contained within a <b>div</b> element with the class <b>container</b>. Inside this <b>div</b>, there is another <b>div</b> with the class <b>calc-body</b>, which contains the calculator’s display and buttons.<br><br>The display is an <b>input</b> element of type <b>text</b>, with an id of <b>result</b>. This is where the calculator’s output will be displayed.<br><br>Below the display, there are several rows of buttons, each contained within a <b>div</b> element with the class <b>calc-row</b>. Each button is an <b>input</b> element of type <b>button</b>, with a value that corresponds to the button’s label. Some buttons also have a class of <b>c-blue</b>, which likely applies some styling to those buttons.<br><br>Each button also has an <b>onclick</b> attribute that specifies a JavaScript function to be called when the button is clicked. These functions perform various actions, such as clearing the screen (<b>clrscr()</b>), deleting the last character (<b>del()</b>), changing the sign of the current value (<b>pos_neg()</b>), or appending a character to the current value (<b>dis()</b>).</p>
+                </fieldset>
+                <fieldset id="fieldset-calci_css">
+                    <legend  id="legend-calci_css">CSS</legend>
+                    <p> This is a CSS code that styles an HTML page. It sets the background color of the <b>body</b> element to a dark grey color using the <b>rgb()</b> function. It also styles a <b>container</b> class to take up the full width and height of the viewport and centers its content both horizontally and vertically using flexbox.<br><br>The code also styles a <b>calc-body</b> class to have a white background, 20px of padding, and rounded corners. The <b>div</b> input selector styles all <b>input</b>elements within a <b>div</b> element to have no border or outline, a height and width of 50px, a font size of 20px, and a transparent background.<br><br>The <b></b>display</b> class is styled to use flexbox to align its content to the right and has a top and bottom margin of 20px. The <b>display input</b> selector styles an <b>input</b> element within the <b>display</b> class to have no border or outline, a height of 50px, right-aligned text, a font size of 35px, and black text color.<br><br>The code also includes some additional classes such as <b>c-blue</b>, which sets the text color to blue, and an <b>#equal</b> ID selector that styles an element with an ID of <b>equal</b> to have rounded corners, a blue background, and white text.</p>
+                </fieldset>
+            </fieldset>
+         </div>
+         <div class="tic">
+            <fieldset id="fieldset-tic">
+                <legend id="legend-tic">Tic Tac Toe</legend>
+                <img  src="tic1.png" class="photo">
+                <fieldset id="feildset-tic_html">
+                    <legend id="legend-tic_html">HTML</legend>
+                    <p>This code is an HTML file that sets up the structure of a Tic Tac Toe game. It includes a <b>head</b> section with metadata and a link to a stylesheet, and a <b>body</b> section with the game's content.<br><br>The <b>body</b> contains an <b>h1</b> heading that displays the title “Tic Tac Toe” and a <b>form</b> element with the class “main-container” and the id “game-board”. Inside the form, there are 9 <b>input</b> elements of type “button” with the class “cell” and an additional class for each cell (e.g. “cell1”, “cell2”, etc.) and an id corresponding to their position on the game board (e.g. “0”, “1”, etc.).<br><br>There is also a <b>div</b> element with the id “popup” that contains another <b>div</b> with the id “winlose” and an <b>input</b> element of type “submit” with the value “Play Again”. This is likely used to display a message when the game is over and allow the user to start a new game.<br><br>Finally, there is another <b>input</b> element of type “submit” with the value “Reset” and the id “reset-outside” outside of the form. This is likely used to reset the game.<br><br>The code also includes a script tag at the end of the body that links to an external JavaScript file called “script.js”. This file likely contains the logic for how the game works.</p>
+                </fieldset>
+                <fieldset id="fieldset-tic_java">
+                    <legend id="legend-tic_java">JAVA</legend>
+                    <p>This JavaScript code is likely the content of the “script.js” file mentioned in the HTML code you shared earlier. It sets up the logic for a Tic Tac Toe game.<br><br>The code starts by selecting all elements with the class “cell” and storing them in a variable called <b>cells</b>. It also sets up some variables to keep track of the current player (<b>currentPlayer</b>), the state of the game board (<b>gameBoard</b>), and whether the game is over (<b>gameOver</b>).<br><br>Next, the code adds an event listener to each cell that listens for clicks. When a cell is clicked, the code checks if the cell is already filled or if the game is over. If either of these conditions is true, it does nothing. Otherwise, it adds the current player's symbol to the cell and updates the <b>gameBoard</b> array.<br><br>The code then checks if the current player has won or if there is a tie. If either of these conditions is true, it sets <b>gameOver</b> to <b>true</b>. Otherwise, it switches to the other player.<br><br>The <b>checkWin</b> function checks if the current player has won by looping through an array of winning combinations and checking if any of them are filled with the current player's symbol. If a winning combination is found, it returns <b>true</b>.<br><br>The <b>checkTie</b> function checks if there is a tie by checking if the <b>gameBoard</b> array contains any empty cells. If it does not, it returns <b>true</b>.</p>
+                </fieldset>
+                <fieldset id="fieldset-tic_css">
+                    <legend id="legend-tic_css">CSS</legend>
+                    <p>This is the CSS code for the Tic Tac Toe game. It styles the HTML elements to make the game look visually appealing.<br><br>The <b>.main-container</b> class styles the <b>form</b> element that contains the game board. It sets its width to 450px and centers it horizontally on the page using <b>margin-left: auto</b> and <b>margin-right: auto</b>. It also sets its display to <b>flex</b> and enables wrapping with <b>flex-wrap: wrap</b>, which allows the cells to be arranged in a 3x3 grid.<br><br>The <b>.cell</b> class styles the <b>input</b> elements that represent the cells on the game board. It sets their width and height to 150px, their font size to 50px, and removes their border. It also sets their background color to white.<br><br>The <b>.cell1</b>, <b>.cell2</b>, <b>.cell4</b>, and <b>.cell5</b> classes add a right and bottom border to these cells. The .cell7 and .cell8 classes add a right border to these cells. The <b>.cell3</b> and <b>.cell6</b> classes add a bottom border to these cells. This creates a grid-like appearance for the game board.<br><br>The <b>#popup</b> id styles the <b>div</b> element that displays a message when the game is over. It sets its display to <b>none</b>, which hides it by default. It also sets its position to <b>fixed</b>, centers it horizontally on the page using <b>margin-left: auto</b> and <b>margin-right: auto</b>, and sets its height, width, background color, and other properties.<br><br>The <b>h1</b> element is styled to center its text and add some margin above and below it.<br><br>The <b>div input</b> selector styles the <b>input</b> elements inside the div with the id “popup”. It sets their height, width, padding, line-height, background color, border-radius, color, and font size.<br><br>The <b>#winlose</b> id styles the <b>div</b> element that displays a win or tie message. It adds some margin above it and sets its font size.<br><br>The <b>#reset-outside</b> id styles the <b>input</b> element that resets the game. It sets its padding, margin-top, background color, height, width, border-radius, color, and font size.<br><br>Finally, there is a media query that applies some different styles when the screen width is less than 600px. It reduces the size of the game board and cells and makes some other adjustments to make the game look good on smaller screens.</p>
+                </fieldset>
+            </fieldset>
+         </div>
+    </section>
+
+</body>
+</html>

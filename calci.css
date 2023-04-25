@@ -1,0 +1,63 @@
+body
+{
+   background: rgb(55, 53, 53);
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-body
+{
+    background: white;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+div input
+{
+    border: 0;
+    outline: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    margin: 4px;
+    background: transparent;
+}
+
+.display
+{
+    display: flex;
+   justify-content: flex-end;
+   margin: 20px 0px;
+}
+
+.display input
+{
+    border: 0;
+    border-radius: 0px;
+    outline: 0;
+    height: 50px;
+    text-align: right;
+    font-size: 35px;
+    flex: 1;
+    color: black;
+}
+
+.c-blue
+{
+    color:blue;
+}
+
+#equal
+{
+    border-radius: 30px;
+    background: blue;
+    color: white;
+}

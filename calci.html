@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+<div class="container">
+    <div class="calc-body">
+        <div class="display"><input type="text" id="result"></div>
+        <div class="calc-row">
+            <input type="button" class="c-blue" value="AC" onclick="clrscr();">
+            <input type="button" class="c-blue" value="&#8592;" onclick="del();">
+            <input type="button" class="c-blue" value="+/-" onclick="pos_neg();" >
+            <input type="button" class="c-blue" value="/" onclick="dis('/');" >
+        </div>
+        <div class="calc-row">
+            <input type="button" value="7" onclick="dis('7');" >
+            <input type="button" value="8" onclick="dis('8');" >
+            <input type="button" value="9" onclick="dis('9');" >
+            <input type="button" class="c-blue" value="*" onclick="dis('*');" >
+        </div>
+        <div class="calc-row">
+            <input type="button" value="4" onclick="dis('4');" >
+            <input type="button" value="5" onclick="dis('5');" >
+            <input type="button" value="6" onclick="dis('6');" >
+            <input type="button" class="c-blue" value="-" onclick="dis('-');" >
+        </div>
+        <div class="calc-row">
+            <input type="button" value="1" onclick="dis('1');" >
+            <input type="button" value="2" onclick="dis('2');" >
+            <input type="button" value="3" onclick="dis('3');" >
+            <input type="button" class="c-blue" value="+" onclick="dis('+');" >
+        </div>
+        <div class="calc-row">
+            <input type="button" value="%" onclick="dis('%');" >
+            <input type="button" value="0" onclick="dis('0');" >
+            <input type="button" value="." onclick="dis('.');" >
+            <input type="button" class="c-blue" id="equal" value="=" onclick="solve();">
+        </div> 
+    </div>
+</div>
+
+    <script>
+        // to clear the screen
+        function clrscr()
+        {
+            document.getElementById("result").value="";
+        }
+        // to display values on the screen
+        function dis(val) 
+        {
+			document.getElementById("result").value += val;
+		}
+        // to clear one by one digit on the screen
+        function del() 
+        {
+			document.getElementById("result").value = document.getElementById("result").value.slice(0,-1);
+		}
+        // to clear the screen
+        function pos_neg() 
+        {
+			document.getElementById("result").value *= -1;
+		}
+        //to solve the values
+        function solve()
+        {
+            document.getElementById("result").value = eval(document.getElementById("result").value);   
+        }
+
+        document.getElementById("result").onkeydown = function(e){
+        if(e.keyCode == 13)
+        {
+            solve();
+        }
+};
+    </script>
+</body>
+</html>
