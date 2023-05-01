@@ -40,8 +40,13 @@ p{
     width:200px;
     margin-left: 480px;
     margin-top: -250px;
-    border-radius: 150px;
+    border-radius: 100px;
     box-shadow: 0px 2px 4px rgb(192, 192, 192),0px 4px 8px rgb(192, 192, 192),0px 6px 12px rgb(112, 109, 109),0px 8px 16px rgb(112, 109, 109),0px 10px 20px rgb(112, 109, 109);
+}
+.photo:hover{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
 }
 .contact{
     /* border: 1px solid black; */
@@ -75,6 +80,12 @@ p{
     border-spacing: 0px;
     margin: auto;
     width: 670px;
+ }
+ .marksheet,p1{
+    font-size: 13px;
+ }
+ .marksheet,p1:hover{
+    font-size: 20px;
  }
 thead{
      /* border: 1px solid rgb(236, 23, 23); */
@@ -121,22 +132,42 @@ tr{
     /* font-size: 15px; */
 }
 .icon1{
+    margin-bottom: 20px;
     height: 60px;
     border-radius: 30px;
     box-shadow: 1px 4px 4px gray,1px 4px 4px gray,1px 4px 4px gray;
-} 
+}
+.icon1:hover{
+    height: 100px;
+    border-radius: 50px;
+}
 .icon2{
+    margin-bottom: 20px;
     height: 60px;
     border-radius: 30px;
     box-shadow: 1px 4px 4px gray,1px 4px 4px gray,1px 4px 4px gray;
+}
+.icon2:hover{
+    height: 100px;
+    border-radius: 50px;
 } 
 .icon3{
+    margin-bottom: 20px;
     height: 60px;
     border-radius: 30px;
     box-shadow: 1px 4px 4px gray,1px 4px 4px gray,1px 4px 4px gray;
-} 
+}
+.icon3:hover{
+    height: 100px;
+    border-radius: 50px;
+}
 .icon4{
+    margin-bottom: 20px;
     height: 60px;
     border-radius: 30px;
     box-shadow: 1px 4px 4px gray,1px 4px 4px gray,1px 4px 4px gray;
 } 
+.icon4:hover{
+    height: 100px;
+    border-radius: 50px;
+}

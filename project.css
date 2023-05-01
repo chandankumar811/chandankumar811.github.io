@@ -20,15 +20,52 @@ section{
     height: auto;
 }
 .photo{
+    padding: 0;
     border-radius: 15px;
-    display:flex;
-   box-shadow: 0px 0px 4px 4px gray;
-   margin:10px;
-   height: auto;
-   height: 450px;
-   width: 300px;
+    display:inline-block;
+    box-shadow: 0px 0px 4px 4px gray;
+    margin:10px;
+    height: auto;
+    width: 300px;
 }
-#fieldset-calci{
+.button1{
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: -300px;
+    height: 50px;
+    display: flex;
+    width: 200px;
+    padding: 15px 25px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 4px black;
+    background-color: darkgreen;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px white;
+}
+.button1:hover{
+ background-color: red;
+}
+a{
+    text-decoration: none;
+}
+.button2{
+    justify-content: center;
+    margin-left: 200px;
+    margin-top:10px;
+    height: 50px;
+    display: flex;
+    width: 200px;
+    padding: 15px 25px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 4px black;
+    background-color: darkgreen;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px white;
+}
+.button2:hover{
+    background-color: red;
+}
+.fieldset-calci{
     background-color: rgb(215, 215, 215);
     box-shadow: 0px 0px 4px black,0px 0px 8px black;
     display: block;
@@ -36,7 +73,7 @@ section{
     border: 2px solid black;
     
 }
-#legend-calci{
+.legend-calci{
     box-shadow: 4px 4px 4px black;
     text-shadow: 1px 4px 4px gray;
     background-color: rgb(190, 182, 182);
@@ -47,19 +84,14 @@ section{
     font-weight: 1000;
     margin-left: 20px;
 }
-#fieldset-calci_html_and_java{
+ .fieldset-calci_html_and_java{
     background-color: white;
     box-shadow: 0px 0px 4px black,0px 0px 8px black;
-    /* display:ruby; */
-    /* margin-top: -480px;
-    margin-left: 380px;
-    margin-bottom: 10px;
-    margin-right: 10px; */
-    margin: auto;
     border: 1px solid black;
-    
+    margin: 10px;
+    margin-top: 200px;
 }
-#legend-calci_html_and_java{
+.legend-calci_html_and_java{
     box-shadow: 2px 2px 4px black;
     text-shadow: 1px 4px 4px gray;
     background-color: rgb(190, 182, 182);
@@ -68,7 +100,7 @@ section{
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    margin-left: auto;
+    margin-left: 20px;
 }
 #fieldset-calci_css{
     background-color:white;
@@ -78,7 +110,7 @@ section{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px; */
-    margin: auto;
+    margin: 10px;
     border: 1px solid black;
     
 }
@@ -91,15 +123,13 @@ section{
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    margin-left: auto;
+    margin-left: 20px;
 }
 #calci,p{
     display:contents;
     margin: 10px;
     font-size: 20px;
 }
-
-
 .tic{
     background-color: white;
     display:flex;
@@ -110,7 +140,7 @@ section{
     background-color: rgb(215, 215, 215);
     box-shadow: 0px 0px 4px black,0px 0px 8px black;
     display: block;
-    margin: auto;
+    margin: 10px;
     border: 2px solid black;
 }
 #legend-tic{
@@ -127,13 +157,9 @@ section{
 #feildset-tic_html{
     background-color: white;
     box-shadow: 0px 0px 4px black,0px 0px 8px black;
-    /* display:ruby; */
-    /* margin-top: -480px;
-    margin-left: 380px;
-    margin-bottom: 10px;
-    margin-right: 10px; */
-    margin: auto;
+    margin: 10px;
     border: 1px solid black;
+    margin-top: 200px;
 }
 #legend-tic_html{
     box-shadow: 2px 2px 4px black;
@@ -154,7 +180,7 @@ section{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px; */
-    margin: auto;
+    margin: 10px;
     border: 1px solid black;
 }
 #legend-tic_java{
@@ -176,7 +202,7 @@ section{
     margin-left: 10px;
     margin-left: 10px;
     margin-bottom: 10px; */
-    margin: auto;
+    margin: 10px;
     border: 1px solid black;
 }
 #legend-tic_css{
@@ -189,4 +215,109 @@ section{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     margin-left: 20px;
+}
+.dark{
+    background-color: white;
+    display:flex;
+    /* border: 1px solid black; */
+    height: auto;
+}
+.fieldset-dark{
+    background-color: rgb(215, 215, 215);
+    box-shadow: 0px 0px 4px black,0px 0px 8px black;
+    display: block;
+    margin: 10px;
+    border: 2px solid black;
+}
+.legend-dark{
+    box-shadow: 4px 4px 4px black;
+    text-shadow: 1px 4px 4px gray;
+    background-color: rgb(190, 182, 182);
+    border: 1px solid black;
+    border-radius: 19px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    margin-left: 20px;
+}
+.fieldset-dark_html{
+    background-color: white;
+    box-shadow: 0px 0px 4px black,0px 0px 8px black;
+    margin: 10px;
+    border: 1px solid black;
+    margin-top: 200px;
+}
+.legend-dark_html{
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 1px 4px 4px gray;
+    background-color: rgb(190, 182, 182);
+    border: 1px solid black;
+    border-radius: 19px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.fieldset-dark_java{
+    background-color:white;
+    display:block;
+    box-shadow: 0px 0px 4px black,0px 0px 8px black;
+    /* margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    margin: 10px;
+    border: 1px solid black;
+}
+.legend-dark_java{
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 1px 4px 4px gray;
+    background-color: rgb(190, 182, 182);
+    border: 1px solid black;
+    border-radius: 19px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.fieldset-dark_css{
+    background-color: white;
+    display:inline;
+    box-shadow: 0px 0px 4px black,0px 0px 8px black;
+    /* margin-top: 4px;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; */
+    margin: 10px;
+    border: 1px solid black;
+}
+.legend-dark_css{
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 1px 4px 4px gray;
+    background-color: rgb(190, 182, 182);
+    border: 1px solid black;
+    border-radius: 19px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.legend-dark_css,b{
+ background-color: gainsboro;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+.back{
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px black;
+    background-color: darkgreen;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px white;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.back:hover{
+ background-color: red;
 }
